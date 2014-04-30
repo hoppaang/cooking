@@ -1,0 +1,237 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>webapp</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <!-- build:css styles/vendor.css -->
+        <!-- bower:css -->
+
+        <!-- endbower -->
+        <!-- endbuild -->
+        <!-- build:css(.tmp) styles/main.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <!-- endbuild -->
+        <!-- build:js scripts/vendor/modernizr.js -->
+        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <!-- endbuild -->
+
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+		<header class="navbar-static-top">
+			<div class="navbar-header">
+				<a href="#" class="navbar-brand">cooking page</a>
+				<button class="navbar-toggle glyphicon glyphicon-th-list btn-lg colorWhite" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+			</div>
+			<nav class="collapse navbar-collapse">
+				<form class="form-inline" role="form">	
+					<ul class="nav navbar-nav nav-menulist">
+						<li><a href="index.html">page list</a></li>
+						<li><a href="create.html" class="active">create page</a></li>
+					</ul>
+				</form>	
+				<div class="btn-group navbar-right padding-sm-horizontal">
+					<form class="form-inline" role="form">	
+						<div class="input-group">
+				    	  <input type="text" class="form-control" style="margin-top:1px !important;height:33px !important">
+				    	  <span class="input-group-btn">
+				    	    <button class="btn btn-default glyphicon glyphicon-search" type="button"></button>
+				    	  </span>
+						</div>
+				  		<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">
+				  		  <span class="glyphicon glyphicon-user"></span> hoppaang <span class="caret"></span>
+				  		</button>
+				 		<ul class="dropdown-menu" role="menu">
+				 		   <li><a href="#">user infomation</a></li>
+				 		   <li><a href="#">logout</a></li>
+				 		</ul>
+				  </form>
+				</div>
+			</nav>
+		</header>
+		
+		<div class="row-fluid">
+			<div class="col-xs-4 col-md-4 page-elements">
+				<form role="form">
+				  <div class="form-group">
+					  <label>headline background</label>
+					  <div class="form-group form-inline">
+					  	<button type="button" class="btn btn-sm btn-idle">...</button>
+					  </div>
+				  </div>
+				  
+				  <div class="form-group">
+					  <label>headline title</label>
+					  <input type="text" class="form-control input-sm" id="" placeholder="input title">
+					  <div class="form-group form-inline btns-form-group">
+					  	<button type="button" class="btn btn-sm btn-idle glyphicon glyphicon-align-left"></button>
+						<button type="button" class="btn btn-sm btn-idle glyphicon glyphicon-align-center"></button>
+						<button type="button" class="btn btn-sm btn-idle glyphicon glyphicon-align-right"></button>
+						<button type="button" class="btn btn-sm btn-idle glyphicon glyphicon-bold"></button>
+						<button type="button" class="btn btn-sm btn-idle glyphicon glyphicon-italic"></button>
+					  </div>
+				  </div>
+				  
+				  <div class="form-group">
+					  <label>add content</label>
+					  <ul class="nav nav-tabs">
+					    <li class="active"><a href="#text" data-toggle="tab" class="element-content element-text"></a></li>
+					    <li><a href="#link" data-toggle="tab" class="element-content element-link"></a></li>
+						 <li><a href="#mail" data-toggle="tab" class="element-content element-mail"></a></li>
+					    <li><a href="#location" data-toggle="tab" class="element-content element-location"></a></li>
+						<li><a href="#phone" data-toggle="tab" class="element-content element-phone"></a></li>
+					  </ul>
+					  <div class="tab-content">
+					    <div class="tab-pane active" id="text">
+							<textarea class="form-control" rows="4" placeholder="input text"></textarea>
+	  						<div class="form-group form-inline btns-form-group">
+	  					 		 <button type="button" class="btn btn-sm btn-idle glyphicon glyphicon-align-left"></button>
+	  							 <button type="button" class="btn btn-sm btn-idle glyphicon glyphicon-align-center"></button>
+	  							 <button type="button" class="btn btn-sm btn-idle glyphicon glyphicon-align-right"></button>
+	  							 <button type="button" class="btn btn-sm btn-idle glyphicon glyphicon-bold"></button>
+	  							 <button type="button" class="btn btn-sm btn-idle glyphicon glyphicon-italic"></button>
+	  					  	</div>
+						</div>
+					    <div class="tab-pane" id="link">
+							<input type="text" class="form-control input-sm" placeholder="input link title"/>
+	  						<input type="text" class="form-control input-sm padding-sm-top" placeholder="input url"/>
+							<input type="checkbox" value="" id="chk-target"/> <label for="chk-target" class="checkLabel">target :  to new tab</label>
+						</div>
+					    <div class="tab-pane" id="mail">
+							<input type="text" class="form-control input-sm" placeholder="input e-mail title"/>
+	  						<input type="text" class="form-control input-sm padding-sm-top" placeholder="input e-mail address"/>
+						</div>
+					    <div class="tab-pane" id="location">
+							<input type="text" class="form-control input-sm" placeholder="input location title"/>
+	  						<input type="text" class="form-control input-sm padding-sm-top" placeholder="input location value"/>
+						</div>
+						<div class="tab-pane" id="phone">
+							<input type="text" class="form-control input-sm" placeholder="input phone title"/>
+	  						<input type="text" class="form-control input-sm padding-sm-top" placeholder="input phone number"/>
+						</div>
+					  </div>
+				  </div>
+				  
+			  </form>
+			</div>
+			<div class="col-xs-8 col-md-8 page-canvas">
+				<div class="headline valign-bottom halign-right">
+					<h1 class="colorType2">headline title</h1>
+					<p class="colorType3">The most popular front-end framework for developing responsive, mobile first projects on the web.</p>
+				</div>
+				
+				<div class="Paragraphline halign-center">Millions of amazing sites across the web are being built with Bootstrap. Get started on your own with our growing collection of examples or by exploring some of our favorites.
+				</div>
+				
+				<div class="padding-base-horizontal">
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<!--content item begin-->
+						<div class="row padding-base-vertical">
+							<div class="col-xs-12 col-sm-4 content-icon">
+								<span class="glyphicon glyphicon-envelope"></span>
+							</div>
+							<div class="col-xs-12 col-sm-8 content-text">
+								<span class="content-title">email title</span>
+								<span class="content-value">email address</span>
+							</div>
+						</div>
+						<!--content item end-->
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<!--content item begin-->
+						<div class="row padding-base-vertical">
+							<div class="col-xs-12 col-sm-4 content-icon">
+								<span class="glyphicon glyphicon-map-marker"></span>
+							</div>
+							<div class="col-xs-12 col-sm-8 content-text">
+								<span class="content-title">location title</span>
+								<span class="content-value">location content</span>
+							</div>
+						</div>
+						<!--content item end-->
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<!--content item begin-->
+						<div class="row padding-base-vertical">
+							<div class="col-xs-12 col-sm-4 content-icon">
+								<span class="glyphicon glyphicon-phone"></span>
+							</div>
+							<div class="col-xs-12 col-sm-8 content-text">
+								<span class="content-title">phone title</span>
+								<span class="content-value">phone number</span>
+							</div>
+						</div>
+						<!--content item end-->
+					</div>
+					<div class="col-xs-12 col-sm-6 col-md-4">
+						<!--content item begin-->
+						<div class="row padding-base-vertical">
+							<div class="col-xs-12 col-sm-4 content-icon">
+								<span class="glyphicon glyphicon-globe"></span>
+							</div>
+							<div class="col-xs-12 col-sm-8 content-text">
+								<span class="content-title">link title</span>
+								<span class="content-value">link url</span>
+							</div>
+						</div>
+						<!--content item end-->
+					</div>
+				</div>
+				<div class="btnline">
+					<div class="col-xs-6 col-md-6">
+						<button type="button" class="btn glyphicon glyphicon-arrow-left"></button>
+						<button type="button" class="btn glyphicon glyphicon-arrow-right"></button>
+					</div>
+					<div class="col-xs-6 col-md-6 halign-right">
+						<button type="button" class="btn btn-info">preview</button>
+						<button type="button" class="btn btn-success">save</button>
+						<button type="button" class="btn btn-idle">reset</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+        <!-- build:js scripts/vendor.js -->
+        <!-- bower:js -->
+        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <!-- endbower -->
+        <!-- endbuild -->
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+
+        <!-- build:js scripts/plugins.js -->
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/affix.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/alert.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/dropdown.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tooltip.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/modal.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/transition.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/button.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/popover.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/carousel.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/scrollspy.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/collapse.js"></script>
+        <script src="../bower_components/bootstrap-sass-official/vendor/assets/javascripts/bootstrap/tab.js"></script>
+        <!-- endbuild -->
+
+        <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/main.js"></script>
+        <!-- endbuild -->
+</body>
+</html>
