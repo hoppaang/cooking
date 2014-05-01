@@ -18,7 +18,6 @@
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="../bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
-
     </head>
     <body>
         <!--[if lt IE 10]>
@@ -190,9 +189,20 @@
 						<button type="button" class="btn glyphicon glyphicon-arrow-right"></button>
 					</div>
 					<div class="col-xs-6 col-md-6 halign-right">
-						<button type="button" class="btn btn-info">preview</button>
+						<a href="view.html" class="btn btn-info" data-toggle="modal" data-target="#myModal">preview</a>
 						<button type="button" class="btn btn-success">save</button>
 						<button type="button" class="btn btn-idle">reset</button>
+					</div>
+					
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+						    <div class="page-canvas">
+								<div class="headline valign-bottom halign-right">
+									<h1 class="colorType2 animated right-to-left">headline title</h1>
+									<p class="colorType3 animated right-to-left">The most popular front-end framework for developing responsive, mobile first projects on the web.</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
